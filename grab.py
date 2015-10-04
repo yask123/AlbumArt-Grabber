@@ -1,6 +1,4 @@
-from bs4 import BeautifulSoup
 import urllib2,cookielib
-import re
 from urllib import quote_plus as qp
 import urllib
 import os
@@ -29,7 +27,6 @@ def grab(search=''):
 
 import glob
 import urllib2
-from bs4 import BeautifulSoup
 
 song_name= glob.glob("*.mp3")
 for name in song_name:
