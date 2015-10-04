@@ -46,7 +46,6 @@ for name in song_name:
 		audiofile.tag.file_info = eyed3.id3.FileInfo("foo.id3")
 	response = urllib2.urlopen(image_link)
 	imagedata = response.read()
-	#imagedata = open("taylor-swift-love-story5.jpg","rb").read()
 
 	audiofile.tag.images.set(0,imagedata,"image/jpeg",u"Album Art")
 	audiofile.tag.save()
